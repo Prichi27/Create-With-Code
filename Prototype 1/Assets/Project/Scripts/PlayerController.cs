@@ -5,7 +5,10 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [Tooltip("Vehichle's speed")]
-    public float Speed; 
+    public float Speed;
+
+    [Tooltip("Vehicle's turn speed")]
+    public float TurnSpeed;
 
     // Start is called before the first frame update
     void Start()
@@ -16,8 +19,12 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var horizontal = Input.GetAxisRaw("Horizontal");
+        // Gets player input
+        var vertical = Input.GetAxis("Vertical");
+        var horizontal = Input.GetAxis("Horizontal");
+
         // Move the vehicle forward
-        transform.Translate(Vector3.forward * Speed * Time.deltaTime);
+        transform.Translate(Speed * Time.deltaTime * vertical * Vector3.forward);
+        transform.Rotate(Vector3.up, horizontal * TurnSpeed * Time.deltaTime);
     }
 }
