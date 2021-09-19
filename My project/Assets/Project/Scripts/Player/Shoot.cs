@@ -18,6 +18,11 @@ public class Shoot : MonoBehaviour
         }    
     }
 
+    private void ShotsFired()
+    {
+
+    }
+
     public void TriggerShoot()
     {
         _isShooting = true;
