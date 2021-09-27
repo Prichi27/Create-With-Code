@@ -19,6 +19,8 @@ public class Enemy : MonoBehaviour
     {
         Vector3 lookAt = _player.transform.position - transform.position;
         _rb.AddForce(_speed * Time.deltaTime * lookAt.normalized);
+
+        if (transform.position.y < -10) Destroy(gameObject);
     }
 
 

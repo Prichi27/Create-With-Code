@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasPower: 0
-  _speed: 150
-  _pushStrength: 150
+  _speed: 600
+  _pushStrength: 50
   _focalPoint: {fileID: 0}
+  _powerIndicator: {fileID: 0}
