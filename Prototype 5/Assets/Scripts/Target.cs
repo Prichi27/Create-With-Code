@@ -54,7 +54,7 @@ public class Target : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if(!gameObject.CompareTag("Bad"))
-            _manager.GameOver();
+            _manager.UpdateLives();
 
         Destroy(gameObject);
     }
