@@ -43,7 +43,7 @@ public class Target : MonoBehaviour
         return new Vector3(Random.Range(-xRange, xRange), ySpawnPos);
     }
 
-    private void OnMouseDown()
+    public void DestroyObject()
     {
         if (!_manager.isGameActive) return;
         Instantiate(explosionEffect, transform.position, explosionEffect.transform.rotation);

@@ -1,0 +1,85 @@
+{
+    "name": "Touch",
+    "maps": [
+        {
+            "name": "Swipe",
+            "id": "6635d544-9f9f-424b-bb79-294dacc4290a",
+            "actions": [
+                {
+                    "name": "Primary Contact",
+                    "type": "Button",
+                    "id": "5e1117ea-984f-4f10-b6cf-088b663c8d62",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press(behavior=2)"
+                },
+                {
+                    "name": "Primary Position",
+                    "type": "PassThrough",
+                    "id": "bdcb997d-2a89-43e7-bc8b-b5247186a124",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "8cac84fb-b2be-4523-a322-1d599dd01580",
+                    "path": "<Touchscreen>/primaryTouch/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Mobile",
+                    "action": "Primary Contact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8792ff30-b8c1-4076-a256-146151384161",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Web",
+                    "action": "Primary Contact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0a597da6-e9f3-497d-9db4-a4171e4bf5e7",
+                    "path": "<Touchscreen>/primaryTouch/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Mobile",
+                    "action": "Primary Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b41ee4fb-e017-4254-8a7d-fef2bde0dc53",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Web",
+                    "action": "Primary Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Mobile",
+            "bindingGroup": "Mobile",
+            "devices": []
+        },
+        {
+            "name": "Web",
+            "bindingGroup": "Web",
+            "devices": []
+        }
+    ]
+}
